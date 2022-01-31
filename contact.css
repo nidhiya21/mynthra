@@ -107,7 +107,7 @@
     .leftBlock-box {
         float: left;
         width: 239px;
-        height: 528px;
+        height: 319px;
         padding-right: 31px;
         border-right: solid 1px #EAEAEC;
         position: relative;
@@ -142,7 +142,7 @@
     .leftBlock-bottomAligned {
         width: 239px;
         position: absolute;
-        bottom: 32px;
+        bottom: 15px;
     }
     .leftBlock-queryBottom {
         font-family: Whitney;
