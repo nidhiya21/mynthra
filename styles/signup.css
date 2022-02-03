@@ -37,8 +37,8 @@
         color: #282c3f;
         width:100%
     }
-    .mobileInputContainer .form-group .mobileNumberInput {
-         padding-left: 62px; 
+    .mobileInputContainer .form-group .mobileText {
+        text-align-last: center;
     }
     .form-group {
         margin-bottom: 14px;
@@ -53,14 +53,11 @@
         position: absolute;
         pointer-events: none;
     }
-    .mobileInputContainer .form-group .commonPlacholder {
-        color: #94969f;
-        top: 10px;
+    /* .placeholderTxt-mobileNumberInput{
         left: 12px;
-        font-size: 14px;
-        position: absolute;
-        pointer-events: none;
-    }
+
+    } */
+
     .submitButton {
         margin-top: 10px;
         cursor: pointer;
@@ -69,7 +66,7 @@
         padding: 12px;
         color: #fff;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 14px; 
         line-height: 16px;
     }
     .phoneNumberValue {
