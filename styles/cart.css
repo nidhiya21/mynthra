@@ -109,12 +109,12 @@ body{
     background: #fff;
     border-radius: 2px;
 }
-.bulkActionStrip-desktopBulkRemove {
+.remove-item {
     color: #535766;
     padding: 6px 24px 6px 0;
     height: 32px;
 }
-.bulkActionStrip-desktopContainer {
+.selectitem-block {
     line-height: 15px;
     display: flex;
     align-items: center;
@@ -132,25 +132,25 @@ body{
     width: 32px;
     justify-content: center;
 }
-.bulkActionStrip-message {
+.select-item-message {
     margin-left: 4px;
 }
-.bulkActionStrip-desktopButton {
+.item-block {
     border-top: 0;
     margin-left: auto;
 }
-.bulkActionStrip-desktopActionButton {
+.action-Button {
     width: auto;
     margin: 0;
 }
-.inlinebuttonV2-base-action {
+.item-text {
     display: inline-block;
     text-align: center;
 }
-.inlinebuttonV2-base-action:last-child {
+.item-text:last-child {
     border-left: 1px solid #d4d5d9;
 }
-.inlinebuttonV2-base-actionButton {
+.item-block-action {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
@@ -161,10 +161,8 @@ body{
     padding: 0 6px;
     
 }
-.item-base-item {
-    position: relative;
-}
-.itemContainer-base-item {
+
+.item-details-block {
     background: #fff;
     font-size: 14px;
     border: 1px solid #eaeaec;
@@ -172,95 +170,90 @@ body{
     position: relative;
     padding: 12px 12px 0;
 }
-.itemContainer-base-itemLeft {
+.item-details-block-Left {
     position: absolute;
 }
-.itemContainer-base-itemRight {
+.item-details-block-Right {
     padding-left: 12px;
     position: relative;
     min-height: 148px;
     margin-left: 111px;
     margin-bottom: 12px;
 }
-.itemContainer-base-details {
+.item-details {
     min-height: 97px;
 }
-.itemContainer-base-details, .itemContainer-base-itemLink {
+.item-details, .item-link {
     text-decoration: none;
     padding-bottom: 0;
     margin-right: 6px;
     color:black;
     font-size: 13px;
 }
-.itemContainer-base-brand {
+.item-brand {
     font-weight: 600;
     margin-bottom: 4px;
 }
-.itemContainer-base-brand, .itemContainer-base-itemLink, .itemContainer-base-itemName {
+.item-brand, .item-link, .itemContainer-base-itemName {
     width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     line-height: 16px;
 }
-.itemContainer-base-itemLink, .itemContainer-base-itemName {
+.item-link, .itemContainer-base-itemName {
     width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     line-height: 16px;
 }
-.itemComponents-base-sellerContainer {
-    margin-top: 2px;
-    display: flex;
-    flex-direction: row;
-}
-.itemContainer-base-sizeAndQtyContainer {
+
+.size-block {
     padding: 8px 0 12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.itemContainer-base-price {
+.item-price {
     display: flex;
 }
-.itemComponents-base-bold {
+.item-price-bold {
     font-weight: 600;
 }
-.itemComponents-base-price {
+.item-normal-price {
     display: inline-block;
     color: #282c3f;
 }
-.itemComponents-base-rupeeBoldIcon {
+.rupee {
     margin-right: 1px;
     height: 9px;
 }
-.itemComponents-base-strikedAmount {
+.item-regular-price {
     display: inline-block;
 }
-.itemComponents-base-discountAbsoluteRupee, .itemComponents-base-itemDiscount, .itemComponents-base-percentageDiscountText {
+.item-Discount{    
     color: #f16565;
 }
-.itemComponents-base-messageContainer {
-    margin-top: 10px;
-}
-.itemComponents-base-message {
+
+.delivery-block {
     color: #282c3f;
     font-size: 12px;
     letter-spacing: -.1px;
     margin-bottom: 8px;
     line-height: 15px;
+    margin-top: 10px;
 }
-.itemComponents-base-checkIcon {
+.checkIcon {
     fill: #03a685;
     height: 10px;
     width: 12px;
     vertical-align: middle;
 }
-.itemComponents-base-messageText {
+.delivery-text {
     display: inline-block;
 }
-.itemContainer-base-closeIcon {
+.closeIcon {
     position: absolute;
     top: 13px;
     right: 13px;
@@ -268,34 +261,29 @@ body{
     height: 14px;
     cursor: pointer;
 }
-.itemComponents-base-sellerData {
+.item-seller {
     font-size: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 62%;
+    max-width: 62%; 
     display: inline;
     color: #94969f;
 }
-.itemContainer-base-sizeAndQtyContainer {
-    padding: 8px 0 12px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.itemComponents-base-price.itemComponents-base-strike {
+
+.itemComponents-base-price.item-sale-price {
     color: #94969f;
     padding: 0 8px;
 }
-.itemComponents-base-strike {
+.item-sale-price {
     text-decoration: line-through;
 }
-.itemContainer-base-selectionIndicator {
+.tick-icon {
     position: absolute;
     left: -9px;
     top: -12px;
 }
-.itemComponents-base-selectionIconContainer {
+.select-container {
     display: flex;
     height: 64px;
     width: 64px;
@@ -303,7 +291,7 @@ body{
     justify-content: center;
 
 }
-.itemComponents-base-animationContainer {
+.select-img{
     position: absolute;
     height: 16px;
     width: 16px;
@@ -313,7 +301,7 @@ body{
 .itemComponents-base-activeProduct {
     fill: #ff3f6c;
 }
-.itemComponents-base-size {
+.item-size {
     display: inline-block;
     white-space: nowrap;
     padding: 2px 8px;
@@ -325,7 +313,7 @@ body{
     border-radius: 2px;
     line-height: 16px;
 }
-.itemComponents-base-quantity {
+.item-quantity {
     display: inline-block;
     white-space: nowrap;
     padding: 2px 8px;
@@ -336,10 +324,10 @@ body{
     border-radius: 2px;
     line-height: 16px;
 }
-.itemComponents-base-highlightedMessage {
+.delivery-date{
     font-weight: 600;
 }
-.addToWishlist-base-wishlistBlock {
+.addToWishlist {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -353,44 +341,44 @@ body{
     border: 1px solid #eaeaec;
     border-radius: 4px;
 }
-.addToWishlist-base-wishlistText {
+.wishlistText { 
     display: flex;
     flex: 1;
     margin-left: 10px;
     font-size: 14px;
     color: #282c3f;
 }
-.desktop-base-right {
+.right-block {
     vertical-align: top;
     display: inline-block;
     width: 35%;
     padding: 65px 0 0 16px;
 }
-.coupons-base-header {
+.coupons-header {
     font-size: 12px;
     font-weight: 600;
     color: #535766;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
-.coupons-base-content {
+.coupons-content {
     padding-bottom: 12px;
     position: relative;
     border-bottom: 1px solid #f5f5f6;
     padding-left: 36px;
 }
-.coupons-base-couponIcon {
+.couponIcon {
     position: absolute;
     left: 0;
     top: 7px;
 }
-.coupons-base-label {
+.apply-label {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     padding: 7px 0;
 }
-.coupons-base-button {
+.apply-button {
     float: right;
     padding: 4px 16px;
     position: absolute;
@@ -405,66 +393,65 @@ body{
     background: #fff;
     font-size: 12px;
 }
-.priceBlock-base-container {
-    margin-bottom: 16px;
+.price-container {
+    margin-bottom: 16px; 
 }
-.priceBlock-base-priceHeader {
+.price-text {
     font-size: 12px;
     font-weight: 600;
     margin: 24px 0 16px;
     color: #535766;
 }
-.priceBreakUp-base-orderSummary {
+.cart-summary {
     font-size: 14px;
 }
-.priceDetail-base-row {
+.priceDetail {
     margin-bottom: 12px;
     line-height: 16px;
 }
-.priceDetail-base-value {
+.price-value {
     float: right;
 }
-.priceDetail-base-total {
+.total-block {
     font-weight: 600;
     font-size: 15px;
     padding-top: 16px;
     border-top: 1px solid #eaeaec;
     color: #3e4152;
-    line-height: 16px;
+    line-height: 16px; 
 }
-.shippingTip-base-free {
-    background-color: #f2faf9;
-}
-.shippingTip-base-deliveryTipContainer {
+
+.delivery-block{
     padding: 8px;
     margin-top: 16px;
     border-radius: 4px;
     display: flex;
+    background-color: #f2faf9;
 }
-.shippingTip-base-tipIcon {
+.shippingIcon {
     display: inline-block;
     vertical-align: middle;
     margin-right: 3px;
 }
-.shippingTip-base-messageContainer {
+.shipping-container {
     color: #3e4152;
     font-size: 14px;
     margin-top: 3px;
     width: 80%;
 }
-.priceDetail-base-infoText {
+.know-more {
     font-weight: 600;
     color: #ff3f6c;
     margin-left: 8px;
     cursor: pointer;
 }
-.priceDetail-base-infoTextContainer {
+.convenience-fee {
     display: inline-block;
 }
-.priceDetail-base-striked {
+.base-striked {
     text-decoration: line-through;
 }
-.button-base-button {
+.order-button {
     font-size: 12px;
     text-align: center;
     border: none;
@@ -496,7 +483,7 @@ body{
     font-weight: 600;
     margin-bottom: 16px;
 }
-.cartFiller-base-cartFillerProduct {
+.productImg-block {
     display: inline-block;
     overflow: hidden;
     width: 172px;
@@ -504,18 +491,8 @@ body{
     margin: 0 10px 10px 0;
     border: 1px solid #eaeaec;
 }
-.cartFiller-base-imageWrapper {
-    min-height: 229px;
-    position: relative;
-}
-.cartFiller-base-imageShimmer {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    visibility: hidden;
-    background-color: rgba(0,0,0,.6);
-}
+
+
 .cartFiller-base-sizeSelector {
     max-height: 85%;
     position: absolute;
@@ -525,12 +502,12 @@ body{
     background-color: #fff;
     
 }
-.cartFiller-base-brandName {
+.brand {
     font-size: 14px;
     font-weight: 600;
    
 }
-.cartFiller-base-productDescription {
+.product-title {
     line-height: 2;
     color: #7e818c;
     overflow: hidden;
@@ -539,11 +516,11 @@ body{
     font-size: 12px;
     min-height: 16px;
 }
-.cartFiller-base-priceInfo {
+.block-price {
     margin: 5px 0;
   
 }
-.cartFiller-base-boldtext {
+.block-price-bold {
     font-size: 12px;
     font-weight: 500;
     color: #282c3f;
@@ -559,13 +536,13 @@ body{
     font-size: 12px;
     font-weight: 500
 }
-.cartFiller-base-discountLabel {
+.pdt-discount {
     color: #ff3f6c;
     padding-left: 2px;
     font-size: 12px;
     font-weight: 500;
 }
-.cartFiller-base-button {
+.add-bag { 
     font-size: 12px;
     cursor: pointer;
     text-align: center;
@@ -574,12 +551,12 @@ body{
     color: #ff3f6c;
     font-weight: 600;
 }
-.image-base-imgResponsive {
+.product-img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.cartFiller-base-info {
+.you-may-like-block {
     border-top: 1px solid #eaeaec;
     position: relative;
     padding: 10px;
